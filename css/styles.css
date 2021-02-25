@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../css/fonts/Roboto-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../css/fonts/Roboto-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Roboto Regular";
+
+}
