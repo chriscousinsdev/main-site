@@ -4,4 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/chriscou/public_html/
     - /bin/cp -R html $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH

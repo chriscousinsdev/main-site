@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="project-container">
+        <div class="content-wrapper">
+            <div class="project-items-wrapper">
+
+                <div class="project-item-wrapper">
+                    <div class="project-img-background"
+                        style="background-image: url(/assets/images/projects/projectbackgrounds/WOBPlaceholder.jpg)">
+                    </div>
+
+                    <div class="img-text-wrapper">
+
+                        <div class="logo-wrapper">
+                            <img src="/assets/images/projects/projectlogos/BOTPlaceholder.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Subtitle placeholder
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project-item-wrapper">
+                    <div class="project-img-background"
+                        style="background-image: url(/assets/images/projects/projectbackgrounds/WOBPlaceholder.jpg)">
+                    </div>
+
+                    <div class="img-text-wrapper">
+
+                        <div class="logo-wrapper">
+                            <img src="/assets/images/projects/projectlogos/BOTPlaceholder.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Subtitle placeholder
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project-item-wrapper">
+                    <div class="project-img-background"
+                        style="background-image: url(/assets/images/projects/projectbackgrounds/WOBPlaceholder.jpg)">
+                    </div>
+
+                    <div class="img-text-wrapper">
+
+                        <div class="logo-wrapper">
+                            <img src="/assets/images/projects/projectlogos/BOTPlaceholder.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Subtitle placeholder
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    const projectItems = document.querySelectorAll('.project-item-wrapper')
+
+    projectItems.forEach(projectItem => {
+        projectItem.addEventListener('mouseover', () => {
+            projectItem.childNodes[1].classList.remove('img-lighten');
+            projectItem.childNodes[1].classList.add('img-darken');
+        })
+
+        projectItem.addEventListener('mouseout', () => {
+            projectItem.childNodes[1].classList.remove('img-darken');
+            projectItem.childNodes[1].classList.add('img-lighten');
+        })
+    })
+</script>
+</html>
+
